@@ -5,15 +5,15 @@ print_highlighted "Installing system packages..."
 source ./packages/system.conf
 install_packages "${SYSTEM_PACKAGES[@]}"
 
-# Install audio packages
-print_highlighted "Installing audio packages..."
-source ./packages/audio.conf
-install_packages "${AUDIO_PACKAGES[@]}"
+# Install multimedia packages
+print_highlighted "Installing multimedia packages..."
+source ./packages/multimedia.conf
+install_packages "${MULTIMEDIA_PACKAGES[@]}"
 
-# Install network packages
-print_highlighted "Installing network packages..."
-source ./packages/network.conf
-install_packages "${NETWORK_PACKAGES[@]}"
+# Install daemon packages
+print_highlighted "Installing daemon packages..."
+source ./packages/daemon.conf
+install_packages "${DAEMON_PACKAGES[@]}"
 
 # Install desktop packages
 print_highlighted "Installing desktop packages..."
