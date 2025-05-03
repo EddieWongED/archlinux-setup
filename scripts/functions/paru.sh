@@ -19,5 +19,5 @@ function install_paru() {
 
 install_packages_aur() {
     local packages=("$@")
-    paru -S "${packages[@]}"
+    paru -S --noconfirm "${packages[@]}"
 }
