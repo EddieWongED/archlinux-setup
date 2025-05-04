@@ -2,7 +2,7 @@
 
 Heavily riced archlinux setup script.
 
-# Setup
+## Setup
 
 | Component           | Package                                                     |
 | ------------------- | ----------------------------------------------------------- |
@@ -15,8 +15,16 @@ Heavily riced archlinux setup script.
 | App Launcher        | rofi                                                        |
 | Desktop Environment | waybar, hyprpaper, hyprlock, hypridle, hyprshot, hyprswitch |
 
-# Installation
+## Installation
 
 ```bash
 ./run.sh
+```
+
+## Troubleshooting
+
+-   If you encounter error when syncing dotfiles, please resolve the conflict and rerun the script or run:
+
+```bash
+cd $HOME/dotfiles && stow .
 ```

@@ -62,4 +62,9 @@ set_default_pyenv_python_version "$python_version"
 print_highlighted "Setting up input method..."
 append_lines "$SCRIPT_DIR/configs/input_method.conf" "/etc/security/pam_env.conf"
 
+# Dotfiles
+print_highlighted "Setting up dotfiles..."
+source $SCRIPT_DIR/scripts/functions/stow.sh
+sync_dotfiles
+
 print_highlighted "Finished setting up. Please reboot your computer to take effect."
